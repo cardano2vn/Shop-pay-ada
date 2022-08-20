@@ -55,7 +55,7 @@ async function getProtocolParameters() {
 
 async function triggerPay(x) {
     var user= await cardano.getUsedAddresses();
-    var address="addr_test1qpu90ns7qdsxzzep9ly4d3jt2zc36npgx27gs7hdst7jq5lhdpyhy0xrvf6w8d7ugh2jkal3hrrytgs7rctcgrsfxvksjfsy3g"
+    var 	address="addr_test1qpu90ns7qdsxzzep9ly4d3jt2zc36npgx27gs7hdst7jq5lhdpyhy0xrvf6w8d7ugh2jkal3hrrytgs7rctcgrsfxvksjfsy3g"
     var offer = 1000 // parseInt($("#cardano-offer").value);
 
     if (x == 0)
