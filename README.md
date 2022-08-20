@@ -1,11 +1,4 @@
-# Nami Wallet examples
-# đây là test
-
-
-
-
-
-
+# Ví dụ về tạo một shop trả bằng tADA
 
 
 Trong kho này, chúng tôi muốn chia sẻ cách triển khai các chức năng cơ bản của Ví Nami trên trang web của bạn.
