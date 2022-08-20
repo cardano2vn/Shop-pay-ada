@@ -137,8 +137,29 @@ async function getProtocolParameters() {
 • triggerPay : kích hoạt thanh toán, lấy số lượng ada cần thanh toán ở giao diện sau đó gọi hàm pay để thanh toán một lượng amount đến địa chỉ address.
 
 ```
+*Sau khi chạy web bạn sẽ thấy như sau*
 
-`
+Trang index.html là trang chủ ở đo bạn có thể thêm các sản phẩm như hình dưới đây
+
+![img](../../src/img/shop-home.png)
+
+
+sau khi nhấn vào "Muangay" bạn sẽ thấy một trang thanh toán như hình sau
+
+![img](../../src/img/shop-buy.png)
+
+Bạn nhân vào Pay! trình duyệt hiện ra cửa sổ bạn Sign 
+
+![img](../../src/img/shop-sign.png)
+
+Bạn nhập Pass vào để ký
+
+![img](../../src/img/shop-ky.png)
+
+Khi đó bạn Sign thì cửa sổ thành công sẽ hiện ra như sau và kết thúc quá trình giao dịch.
+
+![img](../../src/img/shop-ketthuc.png)
+-------------------------------------------
 Chạy ứng dụng mẫu của chúng tôi để thử các chức năng của gói của chúng tôi.
 
 
