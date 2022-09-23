@@ -4,50 +4,87 @@
     <meta charset="utf-8">
     <title>Cardano2vn Labs</title>
     <link rel="shortcut icon" href="#">
+
+    <script>
+        function clickbtn1() {
+            localStorage.setItem("value", "123");
+            localStorage.setItem("img", document.getElementById("img1").src);
+            localStorage.setItem("summary", document.getElementById("text1").outerHTML)
+            window.location.href = 'buy.html';
+        }
+
+        function clickbtn2() {
+            localStorage.setItem("value", "456");
+            localStorage.setItem("img", document.getElementById("img2").src);
+            localStorage.setItem("summary", document.getElementById("text2").outerHTML)
+            window.location.href = 'buy.html';
+        }
+    </script>
 </head>
 <body>
-  <div class="site-wrapper">
+<div class="site-wrapper">
     <div class="site-wrapper-inner">
-      <div class="cover-container">
-        <div class="masthead clearfix">
-          <div class="inner">
-            <h3 class="masthead-brand">Cardano2vn Shop pay  tADA</h3>
-            <nav>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="buy.html">Buy</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-
-        <div class="inner cover">
-          <div class="row">
-            <h1 class="cover-heading">Hello user</h1>
-          </div>
-        </div>
-
-            <br>
-
-            <img src="../img/smartcontrat.png" alt="Khoa hoc">
-            <br>
-            <br>
-			<h3 class="cover-heading">Khoá học giúp bạn hiểu rõ hơn về Blockchain và Smart Contract <br>  Giá của khóa học là 68 tADA<br></h3>
-			
-            <div class="row">
-            <div  class="col-md-11">
-                <button style="width:  170px ; height:50px" class="btn btn-info" id="muangaybtn" onclick="window.location.href='buy.html'">Mua ngay </button>
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">Cardano2vn Shop pay tADA</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="buy.html">Buy</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            </div>
-          	
 
-        <div class="mastfoot">
-          <div class="inner">
-            <p>Cardano2vn LABS <a href="https://www.cardano2vn.io/">nvhieu</a>.</p>
-          </div>
+            <div class="inner cover">
+                <div class="row">
+                    <h1 class="cover-heading">Hello user</h1>
+                </div>
+            </div>
+
+            <div class="item-container">
+                <div class="item1">
+                    <img id="img1" src="../img/smartcontrat.png" alt="Khoa hoc" width="320" height="240">
+                    <h3 id ="text1" class="cover-heading">Khoá học giúp bạn hiểu rõ hơn về Blockchain và Smart Contract <br> Giá của
+                        khóa học là 123 tADA<br></h3>
+
+                    <div class="row">
+                        <div class="col-md-11">
+                            <button style="width:  170px ; height:50px" class="btn btn-info" id="muangaybtn1"
+                                    onclick="clickbtn1()">Mua ngay
+                            </button>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+
+                <div class="item2">
+                    <img id="img2" src="../img/haskell.png" alt="Khoa hoc" width="320" height="240">
+                    <h3 id="text2" class="cover-heading">Khoá học giúp bạn hiểu rõ hơn về ngôn ngữ Haskell <br> Giá của
+                        khóa học là 456 tADA<br></h3>
+
+                    <div class="row">
+                        <div class="col-md-11">
+                            <button style="width:  170px ; height:50px" class="btn btn-info" id="muangaybtn2"
+                                    onclick="clickbtn2()">Mua ngay
+                            </button>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Cardano2vn LABS <a href="https://www.cardano2vn.io/">nvhieu</a>.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 </body>
 </html>

@@ -134,7 +134,7 @@ body {
  * Affix and center
  */
 
-@media (min-width: 768px) {
+@media (min-width: 1768px) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
@@ -158,6 +158,13 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 800px;
   }
+}
+
+.item-container{
+  position: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
 }

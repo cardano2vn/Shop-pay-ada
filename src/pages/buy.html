@@ -23,17 +23,22 @@
         </div>
 
         <div class="inner cover">
-            <h1 class="cover-heading">Khoá học 1</h1>
-            <h3 class="cover-heading">Khoá học giúp bạn hiểu rõ hơn <br> về Blockchain và Smart Contract</h3>
+            <h1 class="cover-heading">Thông tin khoá học</h1>
+            <h3 id="summary" class="cover-heading">Khoá học giúp bạn hiểu rõ hơn <br> về Blockchain và Smart Contract</h3>
             <br>
 
-            <!<img src="../img/smartcontrat.png" alt="Khoa hoc">
+            <img id="img" src="../img/smartcontrat.png" width="320" height="240" alt="Khoa hoc">
             <br>
             <br>
 
             <div class="row">
               <div class="col-md-11">
-                  <input type="number" id="cardano-offer" name="cardano-offer" value="68" style="background-color:black" ><br><br> <!readonly>
+                  <input type="number" readonly id="cardano-offer" name="cardano-offer" value="68" style="background-color:black" ><br><br>
+                  <script>
+                      document.getElementById("summary").innerHTML = localStorage.getItem("summary");
+                      document.getElementById("img").src = localStorage.getItem("img");
+                      document.getElementById("cardano-offer").value = localStorage.getItem("value");
+                  </script>
               </div>
             </div>
 
